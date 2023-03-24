@@ -92,5 +92,13 @@ module.exports = (_env,argv)=> {
     }
   }
 
+  devServer: {
+    compress: true,
+    disableHostCheck: true,   // That solved it
+
+ } 
+
+
+
   return config;
 }
